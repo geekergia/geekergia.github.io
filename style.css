@@ -1,0 +1,138 @@
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Karla', sans-serif;
+}
+
+h1,h2,h3{
+    color: #023047;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+body.about-page{
+    background-color: #F8FEFF;
+}
+
+a:active {
+    color: #023047;
+}
+
+a:hover {
+    color: #023047;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.footer-icon{
+    padding-left:20px;
+    padding-right:20px;  
+    color: #023047;
+}
+
+.footer-link{
+    padding-left:30px;
+    padding-right:30px;
+    color: #023047;
+}
+
+.nav-item {
+    color: #023047;
+}
+
+#banner {
+    padding-bottom: 300px;
+    margin-top: 100px;
+}
+
+#quote {
+    margin-top: 100px;
+    padding: 100px;
+    background-color: #69A1AC;
+}
+
+#about {
+    padding-top: 80px;
+}
+
+
+.sub-title{
+    margin-right: 600px;
+}
+
+.mid-text{
+    text-align: center; 
+}
+
+/* MOUSE SCROLLING ANIMATION */
+.moving-mouse-holder {
+    margin: auto;
+  }
+  
+.moving-mouse-holder .mouse {
+width: 26px;
+height: 40px;
+position: relative;
+right: 0;
+border-radius: 18px;
+border: 2px solid #69A1AC;
+}
+
+.moving-mouse-holder .mouse-button {
+background-color: #69A1AC;
+width: 4px;
+height: 10px;
+border-radius: 2px;
+position: absolute;
+top: 10px;
+left: 50%;
+margin: 0 0 0 -2px;
+animation: mouse-scroll 1s infinite alternate;
+}
+
+.moving-mouse-holder .text {
+margin-top: -30px;
+margin-left: 40px;
+color: #69A1AC;
+font-size: 22px;
+line-height: 1em;
+}
+
+@keyframes mouse-scroll {
+to {
+    transform: translate(0, 6px) scale(1, 0.8);
+}
+}
+
+/* END OF MOUSE SCROLLING */
+
+.work-tab{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.work-tag{
+    color: lightslategrey;
+}
+
+.work-text{
+    padding: 100px;
+}
+
+.fun-points{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
