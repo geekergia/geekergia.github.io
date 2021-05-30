@@ -11,8 +11,12 @@ h1,h2,h3{
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Karla', sans-serif;
+}
+
+.e-resize {
+    cursor: e-resize; 
 }
 
 body.about-page{
@@ -27,6 +31,17 @@ a:hover {
     color: #023047;
 }
 
+.work-tab a{
+    color: #023047;
+    text-decoration: none;
+}
+
+.work-tab a:hover{
+    color: grey;
+    text-decoration: none;
+    cursor: ne-resize;
+}
+
 .navbar{
     background-color: white;
 }
@@ -34,6 +49,15 @@ a:hover {
 .navbar-nav > li{
     padding-left:20px;
     padding-right:20px;
+}
+
+.more-link{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.more-link a:hover{
+    background-color: black;
 }
 
 .footer-icon{
@@ -67,6 +91,26 @@ a:hover {
     padding-top: 80px;
 }
 
+#work-banner{
+    background: url("images/stable-cover.png") no-repeat fixed center;
+    height: 700px;
+}
+
+#read-more {
+    margin-top: 100px;
+    padding: 100px;
+    background-color: #69A1AC;
+}
+
+#more-projects{
+    background-color: white;
+    padding:100px;
+}
+
+.work-tag{
+    color: grey;
+    padding-top: 300px;
+}
 
 .sub-title{
     margin-right: 600px;
@@ -123,7 +167,7 @@ to {
     padding-right: 20px;
 }
 
-.work-tag{
+.tag {
     color: lightslategrey;
 }
 

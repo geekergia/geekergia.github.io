@@ -1,0 +1,69 @@
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Karla', sans-serif;
+}
+
+h1,h2,h3{
+    color: #023047;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+a:active {
+    color: #023047;
+}
+
+a:hover {
+    color: #023047;
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-nav > li{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.footer-icon{
+    padding-left:20px;
+    padding-right:20px;  
+    color: #023047;
+}
+
+.footer-link{
+    padding-left:30px;
+    padding-right:30px;
+    color: #023047;
+}
+
+.nav-item {
+    color: #023047;
+}
+
+#banner {
+    padding-bottom: 300px;
+    margin-top: 100px;
+}
+
+#work-banner{
+    background-image: url("images/stable-work.png") no-repeat fixed center;
+}
+
+.sub-title{
+    margin-right: 600px;
+}
+
+.mid-text{
+    text-align: center; 
+}
+
+

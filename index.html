@@ -6,6 +6,9 @@
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
 
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <!-- GOOGLE FONT API -->
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Karla">
 
@@ -24,43 +27,8 @@
 
     </head>
     <body>
-        <section id="navbar">
-            <nav class="navbar navbar-expand-sm navbar-light pt-3 mr-5 nav class=">
-                <div class="container-fluid">
-                    <a class="navbar-brand ml-5" href="index.html">
-                        <img src="images/Logo.png" width="40px">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <d  iv class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html" target="_top">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/gianna-burgos/">
-                                <span class="fa fa-linkedin"></span></a></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://medium.com/@giannaburgos">
-                                <span class="fa fa-medium"></span></a></span>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/geekergia">
-                                <span class="fa fa-github"></span></a></span>
-                        </li>                         
-                    </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
+        <!-- NAV BAR -->
+        <div id="nav-placeholder"></div>
         
         <!-- BANNER -->
         <section id="banner" data-aos="fade-up" data-aos-duration="2000">
@@ -68,7 +36,7 @@
                 <div class="row align-items-center">
                     <div class="col-8">
                         <h3 class="mb-3" style="color:#023047; font-weight:bold">Hi, I'm Gianna Burgos!</h3>
-                        <h1 class="mb-3 display-5">I build digital products, design impactful UX experiences, </br> create communities for the benefit of the youth.</h1>
+                        <h1 class="mb-3 display-5">I build digital products, design impactful UX experiences </br> & create communities for the benefit of the youth.</h1>
                         <h4 style="color: #3D4A52">Currently a Product Design Intern @ Bowtie</h4>
                         <br>
                         <div class="moving-mouse-holder">
@@ -89,29 +57,36 @@
         <section id="my-work" data-aos="fade-up" data-aos-duration="2000">
             <div class="container pa-3">
                 <div class="row align-items-center">
+                    <!-- <a href="#"> -->
+                        <div class="col work-tab">
+                            <img src="images/ambidextr-work.png" style="border-radius: 5%;" width="500">
+                            <h6 class="tag mt-3">PRODUCT DESIGN | UX RESEARCH</h6>
+                            <h3>Bowtie Internship</h3>
+                            <p style="margin-bottom: 100px;">COMING SOON</p>
+                        </div>
+                    <!-- </a> -->
+                    <a href="#">
+                        
+                    </a>
                     <div class="col work-tab">
-                        <img src="images/ambidextr-work.png" style="border-radius: 5%;" width="500">
-                        <h6 class="work-tag mt-3">PRODUCT DESIGN | UX RESEARCH</h6>
-                        <h3>Bowtie Internship</h3>
-                        <p style="margin-bottom: 100px;">COMING SOON</p>
-                    </div>
-                    <div class="col work-tab">
-                        <img src="images/stable-work.png" style="border-radius: 5%;" width="500">
-                        <h6 class="work-tag mt-3">PRODUCT DESIGN | UX RESEARCH</h6>
-                        <h3>STABLE</h3>
-                        <p style="margin-bottom: 100px;">Educating 34,000 hearing-impaired children in the Philippines.</p>
+                        <a href="stable.html">
+                            <img src="images/stable-work.png" style="border-radius: 5%;" width="500">
+                            <h6 class="tag mt-3">PRODUCT DESIGN | UX RESEARCH</h6>
+                            <h3>STABLE</h3>
+                            <p style="margin-bottom: 100px;">Educating 34,000 hearing-impaired children in the Philippines.</p>
+                        </a>
                     </div>
                 </div>
                 <div class="row align-items-center mt-10">
                     <div class="col work-tab">
                         <img src="images/happyer-work.png" style="border-radius: 5%;" width="500">
-                        <h6 class="work-tag mt-3">PRODUCT DESIGN | UX RESEARCH</h6>
-                        <h3>Happer Applicant Tracking System</h3>
+                        <h6 class="tag mt-3">PRODUCT DESIGN | UX RESEARCH</h6>
+                        <h3>Happyer Applicant Tracking System</h3>
                         <p style="margin-bottom: 100px;">Finding the best talent for companies in Hong Kong and Singapore.</p>
                     </div>
                     <div class="col work-tab">
                         <img src="images/ambidextr-work.png" style="border-radius: 5%;" width="500">
-                        <h6 class="work-tag mt-3">UX DESIGN | APP DEVELOPMENT</h6>
+                        <h6 class="tag mt-3">UX DESIGN | APP DEVELOPMENT</h6>
                         <h3>FoodBoard</h3>
                         <p style="margin-bottom: 100px;">COMING SOON</p>
                     </div>
@@ -119,7 +94,7 @@
                 <div class="row align-items-center mt-10">
                     <div class="col work-tab">
                         <img src="images/ambidextr-work.png" style="border-radius: 5%;" width="500">
-                        <h6 class="work-tag mt-3">UX DESIGN | WEB DEVELOPMENT</h6>
+                        <h6 class="tag mt-3">UX DESIGN | WEB DEVELOPMENT</h6>
                         <h3>Ambidextr Media</h3>
                         <p style="margin-bottom: 100px;">Communication arm of Asia Pacific’s leading tech companies. </p>
                     </div>
@@ -173,6 +148,16 @@
 
     <script>
         AOS.init();
-    </script>
+
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+
+        $("#navbar").load("nav.html",function(data){
+            var navLink = $(data).find("nav-link").attr("a");
+            window.console&&console.log('navLink');
+        });
+
+    </script> 
 
 </html>

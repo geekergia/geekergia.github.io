@@ -6,6 +6,9 @@
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
 
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <!-- GOOGLE FONT API -->
         <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Karla">
 
@@ -24,44 +27,10 @@
 
     </head>
     <body class="about-page">
-        <section id="navbar">
-            <nav class="navbar navbar-expand-sm navbar-light pt-3 mr-5 nav class=">
-                <div class="container-fluid">
-                    <a class="navbar-brand ml-5" href="index.html">
-                        <img src="images/Logo.png" width="40px">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <d  iv class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/gianna-burgos/">
-                                <span class="fa fa-linkedin"></span></a></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://medium.com/@giannaburgos">
-                                <span class="fa fa-medium"></span></a></span>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/geekergia">
-                                <span class="fa fa-github"></span></a></span>
-                        </li>                         
-                    </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
-        
+
+        <!-- NAV BAR -->
+        <section id="nav-placeholder"></section>
+
         <!-- ABOUT -->
         <section id="about">
             <div class="container">
@@ -71,7 +40,7 @@
                             About Me
                         </h1>
                         <h3 class="mt-4" data-aos="fade-left" data-aos-duration="2000">
-                            I’m a UX and Product Designer with a background in Engineering. 
+                            I’m a self-motivated UX and Product Designer based in Hong Kong with a background in Engineering. I major in Computer Science at UP Diliman.  
                             </br></br>
                             I thrive in transforming ideas into a more impactful digital experience. I also create inclusive communities for the youth.
                         </h3>
@@ -88,6 +57,58 @@
                         I am currently a Product Design Intern at Bowtie in Hong Kong. In 2020, my passion for designing and developing digital experience has led me to UX Developer Internships at build impactful products for Happyer and Ambidextr Media. I also participate in hackathons to build solutions for underpriviledged communities, such as the STABLE App. 
                     </h5>
                 </div>
+                <div style="padding:30px" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="row mt-3">
+                        <div class="col">
+                            <h2 style="font-weight: bold">
+                                Work
+                            </h2>
+                            <h5 class="mt-4">
+                                Bowtie
+                            </h5>
+                            <h5>
+                                Happyer
+                            </h5>
+                            <h5>
+                                Ambidextr Media
+                            </h5>
+                            <h5>
+                                Executive Center
+                            </h5>
+                        </div>
+                        <div class="col">
+                            <h2 style="font-weight: bold">
+                                Projects
+                            </h2>
+                            <h5 class="mt-4">
+                                STABLE
+                            </h5>
+                            <h5>
+                                FoodBoard
+                            </h5>
+                            <h5>
+                                UPD Mobile
+                            </h5> 
+                        </div>
+                        <div class="col">
+                            <h2 style="font-weight: bold">
+                                Awards
+                            </h2>
+                            <h5 class="mt-4">
+                                2nd Place @ Global Digital Inclusion Challenge 2020
+                            </h5>
+                            <h5>
+                                Procter & Gamble NEXT 8
+                            </h5>
+                            <h5>
+                                Filipinas in Tech Speaker
+                            </h5>
+                            <h5>
+                                LEAP Foundation Scholar
+                            </h5>      
+                        </div>
+                    </div>
+                </div>    
                 <div style="padding:30px" data-aos="fade-up" data-aos-duration="2500">
                     <h2 style="font-weight: bold">
                         Communities
@@ -122,23 +143,7 @@
                         <div class="col mt-3">
                         </div>
                     </div>
-                </div>
-                <div style="padding:30px" data-aos="fade-up" data-aos-duration="2000">
-                    <h2 style="font-weight: bold">
-                        Projects
-                    </h2>
-                    <h5 class="mt-4">
-                        I led the project of the first on-campus mobile app at my university with some friends, UPD Mobile. 
-                    </h5>
-                </div>
-                <div style="padding:30px" data-aos="fade-up" data-aos-duration="2000">
-                    <h2 style="font-weight: bold">
-                        Education
-                    </h2>
-                    <h5 class="mt-4">
-                        I study Computer Science at the University of the Philippines Diliman. 
-                    </h5>
-                </div>
+                </div>           
                 <div style="padding:30px" data-aos="fade-up" data-aos-duration="2000">
                     <h2 style="font-weight: bold">
                         Fun Stuff
@@ -208,6 +213,10 @@
 
     <script>
         AOS.init();
+
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
     </script>
 
 </html>
