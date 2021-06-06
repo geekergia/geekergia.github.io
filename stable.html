@@ -24,46 +24,11 @@
 
     </head>
     <body class="about-page">
-        <section id="navbar">
-            <nav class="navbar navbar-expand-sm navbar-light pt-3 mr-5 nav class=">
-                <div class="container-fluid">
-                    <a class="navbar-brand ml-5" href="index.html">
-                        <img src="images/Logo.png" width="40px">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <d  iv class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/gianna-burgos/">
-                                <span class="fa fa-linkedin"></span></a></span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://medium.com/@giannaburgos">
-                                <span class="fa fa-medium"></span></a></span>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/geekergia">
-                                <span class="fa fa-github"></span></a></span>
-                        </li>                         
-                    </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
+        <!-- NAVBAR -->
+        <div id="nav-placeholder"></div>
         
         <!-- BANNER -->
-        <section id="work-banner">
+        <section id="stable-banner">
             <div class="container p-10 work-container">
                 <h4 class="work-tag">PRODUCT DESIGN | UX RESEARCH</h4>
                 <h1 class="display-2 work-title">STABLE</h1>
@@ -100,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="padding: 150px">
+                <div class="highlight-text">
                     <h2 style="font-weight: 600;">Overall, our team was awarded the top 2 out of 300 global teams in the Digital Inclusion Challenge 2020. </h2>
                 </div>
                 <!-- OBJECTIVE -->
@@ -111,8 +76,8 @@
                 <h3 class="mt-5" style="font-weight: semi-bold;">
                     Final Prototype
                 </h3>
-                <div class="prototype">
-
+                <div class="prototype text-center mt-5">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7tGwNAzarLqg20j5Jkrv5D%2FDIC-2020%3Fpage-id%3D2%253A27%26node-id%3D86%253A1550%26scaling%3Dscale-down" allowfullscreen></iframe>
                 </div>
                 <!-- THE PROBLEM -->
                 <h1 class="display-6 mt-5" style="font-weight: bold;">
@@ -120,13 +85,13 @@
                 </h1>
                 <h5 class="mt-3">
                     <div class="row">
-                        <div class="col-5">
+                        <div class="col-md-5">
                             <h6>As of today,</h6>
                             <h1 class="display-3">248,000</h1>
                             <h4>children with hearing impairements in the Philippines</h4>
                         </div>
-                        <div class="col">
-                            <h6>Due to COVID-19, </h6>
+                        <div class="col-md-7">
+                            <h6 class="mt-sm-2">Due to COVID-19, </h6>
                             <h1 class="display-3">0.2% of 37,200</h1>
                             <h4>enrolled in school where most schools lack necessary tools for online PWD learning*</h4>   
                         </div>
@@ -217,7 +182,9 @@
             <div class="container d-flex justify-content-center">
                 <div data-aos="fade-up" data-aos-duration="1000" style="color: white;">
                    <h4 class="text-center">Enjoyed reading the process?</h4>
-                   <button type="button" class="mt-2 btn btn-outline-light btn-secondary btn-lg">Read the full case study on Medium</button>
+                   <a href="https://uxplanet.org/adaptive-learning-management-system-for-hearing-impaired-children-a-ux-case-study-e73042e09466" class="mt-2 btn btn-outline-light btn-secondary btn-lg active" role="button" aria-pressed="true">
+                        Read the full case study on Medium 
+                    </a>
                 </div>
             </div>
         </section>
@@ -225,55 +192,30 @@
         <section id="more-projects" data-aos="fade-up" data-aos-duration="2000">
             <div class="container align-items-center">
                 <h1 class="text-center">Explore more</h1>
-                <a class="e-resize more-link text-center" style="text-decoration:none" href="about.html">
-                    <h3>Bowtie</h3>
-                </a>
-                <a class="e-resize more-link text-center" style="text-decoration:none" href="about.html">
+                <a class="e-resize more-link text-center" style="text-decoration:none" href="happyer-ats.html">
                     <h3>Happyer</h3>
                 </a>
-                <a class="e-resize more-link text-center" style="text-decoration:none" href="about.html">
+                <a class="e-resize more-link text-center" style="text-decoration:none" href="ambidextr.html">
                     <h3>Ambidextr Media</h3>
                 </a>
             </div>            
         </section>
 
         <!-- FOOTER -->
-        <div class="row footer" style="background:#F8FEFF; margin-top:200px">
-            <div class="container p-5">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <h4 class="mb-3">Let's talk!</h4>
-                        <div class="row">
-                            <a class="footer-icon" href="https://www.linkedin.com/in/gianna-burgos/">
-                                <span class="fa fa-linkedin"></span></a>
-                            <a class="footer-icon" href="https://medium.com/@giannaburgos">
-                                <span class="fa fa-medium"></span></a>
-                            <a class="footer-icon" href="https://github.com/geekergia">
-                                <span class="fa fa-github"></span></a>
-                            <a class="footer-icon" href="mailto:gbburgos@up.edu.com">
-                                <span class="fa fa-envelope"></span></a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row mb-3">
-                            <a class="footer-link active" style="text-decoration:none" aria-current="page" href="index.html">Work</a>
-                            <a class="footer-link" style="text-decoration:none" href="about.html">About</a>
-                            <a class="footer-link" style="text-decoration:none" href="mailto:gbburgos@up.edu.ph">Resume</a>
-                        </div>
-                        <h6 class="footer-text">
-                            Made with custom CSS, JS, and Bootstrap 4.
-                        </h6>
-                        <h6 class="footer-text">
-                            © 2021 Gianna Burgos. All rights reserved.
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="footer"></div>
+
     </body>
 
     <script>
         AOS.init();
-    </script>
+
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+
+        $.get("footer.html", function(data){
+            $("#footer").replaceWith(data);
+        });
+    </script> 
 
 </html>
