@@ -44,6 +44,11 @@ body.about-page{
     background-color: #F8FEFF;
 }
 
+a{
+    color:#023047;
+    text-decoration: none;
+}
+
 a:active {
     color: #023047;
 }
