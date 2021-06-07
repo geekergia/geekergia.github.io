@@ -44,17 +44,17 @@ body.about-page{
     background-color: #F8FEFF;
 }
 
-a{
-    color:#023047;
-    text-decoration: none;
-}
-
 a:active {
     color: #023047;
 }
 
 a:hover {
     color: #023047;
+}
+
+.about-links {
+    color:#69A1AC!important;
+    text-decoration: none !important;
 }
 
 .navbar-collapse{
@@ -123,7 +123,6 @@ a:hover {
 }
 
 .quote-text{
-    margin-right: 400px; 
     margin-left: 30px;
 }
 
