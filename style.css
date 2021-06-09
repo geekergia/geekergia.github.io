@@ -179,6 +179,10 @@ a:hover {
     padding: 150px;
 }
 
+.container .quote-div {
+    padding: 100px;
+}
+
 /* MOUSE SCROLLING ANIMATION */
 .moving-mouse-holder {
     margin: auto;
@@ -258,5 +262,12 @@ to {
     }
     .about-section{
         margin-top: 20px;
+    }
+    .about-col{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .container .quote-div{
+        padding: 50px;
     }
 }
