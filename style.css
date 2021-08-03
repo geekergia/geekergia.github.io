@@ -283,6 +283,13 @@ to {
         margin-left: 0px;
         margin-right: 0px;
     }
+    #about-me{
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    #about-skills{
+        padding:50px;
+    }
     #banner{
         margin-left:30px;
         padding-bottom: 200px;
